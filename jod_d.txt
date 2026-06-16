@@ -1,0 +1,51 @@
+Location: Pune/Noida, India (Hybrid — flexible cadence) | Open to relocation candidates from Tier-1 Indian cities
+Employment Type: Full-time
+Experience Required: 5–9 years 
+
+
+
+1. Deep technical depth in modern ML systems — embeddings, retrieval, ranking, LLMs, fine-tuning
+2. Scrappy product-engineering attitude — willing to ship a working ranker in a week even if the underlying ML is "obviously suboptimal," because we need to learn from real users before we know what to actually optimize for.
+
+(
+If you've spent your career in pure research environments (academic labs, research-only roles) without any production deployment — we will not move forward
+If you are a senior engineer who hasn't written production code in the last 18 months because you've moved into "architecture" or "tech lead" roles — we will probably not move forward. This role writes code.
+If your "AI experience" consists primarily of recent (under 12 months) projects using LangChain to call OpenAI — we will probably not move forward, unless you can demonstrate substantial pre-LLM-era ML production experience. We're looking for people who understood retrieval and ranking before it became fashionable.
+)
+
+
+Production experience with embeddings-based retrieval systems + embedding drift, index refresh, retrieval-quality regression in production + sentence-transformers, OpenAI embeddings, BGE, E5
+
+
+Production experience with vector databases or hybrid search infrastructure + Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS
+
+Strong Python
+
+Hands-on experience designing evaluation frameworks for ranking systems + NDCG, MRR, MAP, offline-to-online correlation, A/B test interpretation
+
+LLM fine-tuning experience (LoRA, QLoRA, PEFT)
+Experience with learning-to-rank models (XGBoost-based or neural)
+Prior exposure to HR-tech, recruiting tech, or marketplace products
+Background in distributed systems or large-scale inference optimization
+Open-source contributions in the AI/ML space
+
+
+
+plans to be here for 3+ years.
+
+
+
+do NOT want
+
+If your career trajectory shows you optimizing for "Senior" → "Staff" → "Principal" titles by switching companies every 1.5 years
+
+only worked at consulting firms - TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini
+
+primary expertise is computer vision, speech, or robotics without significant NLP/IR exposure.
+
+People whose work has been entirely on closed-source proprietary systems for 5+ years without external validation (papers, talks, open-source). We need to see how you think, not just trust that you can think.
+
+prefer other country people less for same skill set
+
+prefer people having less days of notice period
+
