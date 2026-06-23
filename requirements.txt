@@ -1,0 +1,8 @@
+# Redrob Hackathon — Candidate Ranker
+# Minimal dependencies — CPU-only, no network required during ranking
+
+# Core (usually pre-installed)
+# python >= 3.10 required (uses type union syntax X | Y)
+
+# Required for debug mode only (--debug flag)
+pandas>=2.0.0

@@ -1,0 +1,57 @@
+# Redrob Hackathon — Submission Metadata
+
+team_name: "INDIARUNS"
+
+primary_contact:
+  name: "Kushal Kambar"
+  email: "kushalbkambar@gmail.com"
+  phone: "+91-9035035884"
+
+team_members:
+  - name: "Kushal Kambar"
+    email: "kushalbkambar@gmail.com"
+    role: "ML Engineer / Team Lead"
+
+github_repo: "https://github.com/kushalkambar5/indiaruns"
+
+sandbox_link: "https://huggingface.co/spaces/kushalkambar5/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local Windows Machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+
+
+ai_usage_summary: |
+  No candidate data was fed to any LLM API during ranking — all scoring
+  is local, CPU-only, zero-dependency. The scoring logic, weights, and heuristics
+  were designed and validated by the team.
+
+methodology_summary: |
+  Multi-component weighted ranker with multiplicative behavioral modifier.
+  Five scoring components: career intelligence (0.35), skills trust (0.25),
+  experience fit (0.15), location+notice (0.10), education (0.05).
+  Career score uses keyword-weighted matching on role descriptions (Tier-1:
+  retrieval/embedding/vector/NDCG keywords; Tier-2: NLP/LLM/fine-tuning;
+  negatives: CV/hardware/accounting domains). Skills scored by relevance ×
+  proficiency × log(duration) × log(endorsements) — not raw count — to defeat
+  keyword stuffers. Behavioral multiplier (0.30–1.20) uses last_active_date,
+  recruiter_response_rate, open_to_work_flag, and interview_completion_rate.
+  Honeypot detection via timeline impossibility and expert-skill/zero-duration
+  contradiction. Runtime <90s on CPU for 100K candidates.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
